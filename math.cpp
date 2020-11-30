@@ -1,5 +1,5 @@
 #include<iostream>
-#include <math.h>
+#include <math.h>    // Header file for mathematical operations
 using namespace std;
 
 int main(){

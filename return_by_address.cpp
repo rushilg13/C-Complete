@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 
-int* array(int size)
+int* array()
 {
-	int *p = new int[size];
-	for(int i=0; i<size; i++)
+	int *p = new int[5];
+	for(int i=0; i<5; i++)
 	{
 		p[i] = i+1;
 	}
@@ -13,6 +13,10 @@ int* array(int size)
 
 int main(int argc, char const *argv[])
 {
-	int *ptr = array[5];  
+	int *ptr = array();  
+	for(int i=0; i<5; i++)
+	{
+		cout<<ptr[i]<<endl;
+	}
 	return 0;
 }

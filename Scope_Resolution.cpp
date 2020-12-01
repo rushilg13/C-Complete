@@ -19,7 +19,7 @@ class Rectangle
             getBred(br);
         }
 
-        Rectangle (Rectangle &r)   // Copy Constructor
+        Rectangle (Rectangle &r)
         {
             l = r.l;
             b = r.b;
@@ -48,11 +48,14 @@ class Rectangle
             return l*b;
         }
 
-        float perimeter()
-        {
-            return 2*(l+b);
-        }
+        float perimeter();        // Function declared inside class but elaborated outside using scope resolution
+
 };
+
+float Rectangle::perimeter()     // Scope Resolution is ::
+{
+    return 2*(l+b);
+}
 
 
 int main(int argc, char const *argv[])

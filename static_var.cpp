@@ -20,3 +20,4 @@ int main(int argc, char const *argv[])
 /*
 Only diff b/w static and global variables is that global are accessible in any functiona and remains always in memory
 statoc are not accessible everywhere. they are only accessible in that function. But they remain in memory tll prog ends.
+*/
